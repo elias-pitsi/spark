@@ -1,3 +1,5 @@
+version: 3.9 
+
 services:
   spark-master:
     container_name: da-spark-master
