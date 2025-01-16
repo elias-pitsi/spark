@@ -1,5 +1,3 @@
-version: 3.9 
-
 services:
   spark-master:
     container_name: da-spark-master
@@ -36,7 +34,6 @@ services:
       - '18080:18080'
 
   spark-worker:
-#    container_name: da-spark-worker
     image: da-spark-image
     entrypoint: ['./entrypoint.sh', 'worker']
     depends_on:
